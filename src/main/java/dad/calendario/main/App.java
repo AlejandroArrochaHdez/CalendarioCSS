@@ -5,11 +5,11 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class App extends Application {
-	CalendarioController c;
+	CalendarioCssController c;
 	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		c = new CalendarioController();
+		c = new CalendarioCssController();
 		
 		Scene scene = new Scene(c.getView());
 		primaryStage.setTitle("Calendario");

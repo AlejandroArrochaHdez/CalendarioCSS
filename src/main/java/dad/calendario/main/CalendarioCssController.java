@@ -16,7 +16,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
 
-public class CalendarioController implements Initializable {
+public class CalendarioCssController implements Initializable {
 
 	@FXML
 	private GridPane view;
@@ -70,8 +70,8 @@ public class CalendarioController implements Initializable {
 	
 	private IntegerProperty year = new SimpleIntegerProperty();
 	
-	public CalendarioController() throws IOException {
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/CalendarioView.fxml"));
+	public CalendarioCssController() throws IOException {
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/CalendarioCssView.fxml"));
 		loader.setController(this);
 		loader.load();
 	}
